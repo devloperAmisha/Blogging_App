@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Blogging Platform</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Outer wrapper div with light background -->
+  <div class="outer-wrapper">
+    <div class="main-container">
+      <header class="header-row">
+        <h1 id="headh1">📝 My Blog</h1>
+        <button class="open-modal-btn" onclick="openModal()">Create New Post</button>
+      </header>
+
+      <div id="postsContainer" class="posts"></div>
+    </div>
+
+    <!-- Blog Form Modal -->
+    <div class="modal" id="modal">
+      <div class="modal-content">
+        <h2>New Blog Post</h2>
+        <input type="text" id="title" placeholder="Title" required />
+        <textarea id="content" rows="5" placeholder="Your content..." required></textarea>
+        <button onclick="addPost()">Publish</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
